@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Footbath Cafe & Bar YOU (愈) in Shinjuku Kabukicho, Tokyo. Foot reflexology, body acupressure and aroma oil massage paired with a genuine café & bar. Open 24 hours, all year round — an adult relaxation lounge to unwind any time.">
+  <title>Footbath Cafe &amp; Bar YOU (愈) Kabukicho | 24h Relaxation in Shinjuku</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../landing.html" class="logo">愈 YOU<span class="logo-sub">Cafe &amp; Bar</span></a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#special">Special</a></li>
+          <li><a href="#body">Body</a></li>
+          <li><a href="#oil">Oil</a></li>
+          <li><a href="#foot">Foot</a></li>
+          <li><a href="#cafebar">Cafe &amp; Bar</a></li>
+          <li><a href="#visit">Access</a></li>
+        </ul>
+        <div class="lang-switch">
+          <a href="../cn/index.html">中文</a>
+          <a href="../en/index.html" class="active">EN</a>
+          <a href="../jp/index.html">日本語</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-slide active" style="background-image: url(../assets/images/interior.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/room.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/oil.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/bar.webp);"></div>
+      </div>
+      <div class="hero-grid-overlay"></div>
+      <div class="hero-content container">
+        <p class="hero-tag">Shinjuku Kabukicho, Tokyo | Open 24h · Year-round</p>
+        <h1>Relaxation &amp; a Drink,<br>in the Heart of Kabukicho.</h1>
+        <p class="hero-sub">Foot reflexology, body acupressure and aroma oil massage — with a genuine café &amp; bar right beside you. Open 24 hours, for a moment of calm that is entirely your own.</p>
+        <div class="hero-cta">
+          <a href="#special" class="btn btn-primary">View Menu</a>
+          <a href="../booking.html?lang=en" class="btn btn-whatsapp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Book on WhatsApp
+          </a>
+        </div>
+        <div class="hero-quick-nav">
+          <a href="#special" class="hero-nav-pill">Special</a>
+          <a href="#body" class="hero-nav-pill">Body</a>
+          <a href="#oil" class="hero-nav-pill">Oil</a>
+          <a href="#cafebar" class="hero-nav-pill">Cafe &amp; Bar</a>
+        </div>
+      </div>
+      <div class="hero-dots" id="heroDots">
+        <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="hero-dot" data-index="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="container intro-grid">
+        <div class="intro-text">
+          <h2>In the middle of Kabukicho,<br>a place to let go</h2>
+          <p>YOU (愈) blends a full relaxation menu — footbath, foot reflexology, body acupressure and aroma oil massage — with a genuine café &amp; bar; an adult hideaway all its own. After your treatment, linger over a Suntory whisky, a glass of sake or a carefully chosen snack. Open 24 hours, all year round, so you can drop by late at night or early in the morning, entirely at your own pace.</p>
+        </div>
+        <div class="intro-features">
+          <div class="intro-promo-image">
+            <img src="../assets/images/relax.webp" alt="YOU Kabukicho" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="special">
+      <div class="container">
+        <header class="section-header">
+          <h2>Special Combo Courses</h2>
+          <p class="section-sub">Foot and body combined — our most popular way to unwind.</p>
+        </header>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 1: Foot30 + Body30 (60min)">
+              <span class="opt-duration"><span class="opt-name">① Foot 30min + Body 30min</span></span>
+              <span class="opt-price">¥7,580<small>60min total</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 2: Foot30 + Body30 + Head10 (70min)" checked>
+              <span class="opt-duration"><span class="opt-name">② Foot 30min + Body 30min + Head 10min<span class="opt-badge">Popular No.2</span></span></span>
+              <span class="opt-price">¥7,980<small>70min total</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 3: Foot30 + Body60 (90min)">
+              <span class="opt-duration"><span class="opt-name">③ Foot 30min + Body 60min</span></span>
+              <span class="opt-price">¥12,100<small>90min total</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 4: Foot60 + Body Acupressure60 (120min)">
+              <span class="opt-duration"><span class="opt-name">④ Foot 60min + Body Acupressure 60min</span></span>
+              <span class="opt-price">¥15,000<small>120min total</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 5: Foot60 + Body Oil60 (120min)">
+              <span class="opt-duration"><span class="opt-name">⑤ Foot 60min + Body Oil 60min</span></span>
+              <span class="opt-price">¥16,500<small>120min total</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 6: Foot60 + Body Oil90 (150min)">
+              <span class="opt-duration"><span class="opt-name">⑥ Foot 60min + Body Oil 90min</span></span>
+              <span class="opt-price">¥19,800<small>150min total</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 7 Grand: Foot60 + Body Oil120 (180min)">
+              <span class="opt-duration"><span class="opt-name">⑦ Grand Course｜Foot 60min + Body Oil 120min</span></span>
+              <span class="opt-price">¥22,800<small>180min total</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=en" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> Book on WhatsApp</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="foot">
+      <div class="container">
+        <header class="section-header">
+          <h2>Foot Reflexology</h2>
+        </header>
+        <div class="service-intro">
+          <div class="service-photo"><img src="../assets/images/foot.webp" alt="Foot reflexology" loading="lazy"></div>
+          <div class="service-desc">
+            <p class="service-tagline">Rebalance your whole body, from the soles up</p>
+            <p>After warming your feet in the footbath, our therapists work the reflex zones of the soles with care. Ideal if you stand all day, walk a lot, or struggle with swelling.</p>
+          </div>
+        </div>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="foot-sel" value="Foot Massage 60min" checked>
+              <span class="opt-duration"><span class="opt-name">Foot Reflexology</span></span>
+              <span class="opt-price">¥7,950<small>60min</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="foot-sel" value="Foot Massage 90min">
+              <span class="opt-duration"><span class="opt-name">Foot Reflexology</span></span>
+              <span class="opt-price">¥11,000<small>90min</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=en" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> Book on WhatsApp</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section" id="body">
+      <div class="container">
+        <header class="section-header">
+          <h2>Body Acupressure Massage</h2>
+        </header>
+        <div class="service-intro">
+          <div class="service-photo"><img src="../assets/images/room.webp" alt="Body acupressure massage" loading="lazy"></div>
+          <div class="service-desc">
+            <p class="service-tagline">Ease every knot with focused acupressure</p>
+            <p>We work the shoulders, neck, back and waist with a full-body acupressure technique, releasing the tension that builds up from desk work and long days.</p>
+          </div>
+        </div>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="body-sel" value="Body Acupressure 30min">
+              <span class="opt-duration"><span class="opt-name">Body Acupressure</span></span>
+              <span class="opt-price">¥4,400<small>30min</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="body-sel" value="Body Acupressure 60min" checked>
+              <span class="opt-duration"><span class="opt-name">Body Acupressure</span></span>
+              <span class="opt-price">¥8,250<small>60min</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="body-sel" value="Body Acupressure 90min">
+              <span class="opt-duration"><span class="opt-name">Body Acupressure</span></span>
+              <span class="opt-price">¥12,100<small>90min</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=en" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> Book on WhatsApp</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="oil">
+      <div class="container">
+        <header class="section-header">
+          <h2>Body Oil Massage</h2>
+        </header>
+        <div class="service-intro">
+          <div class="service-photo"><img src="../assets/images/oil.webp" alt="Body oil massage" loading="lazy"></div>
+          <div class="service-desc">
+            <p class="service-tagline">A smooth, full-body aroma oil treatment</p>
+            <p>Using carefully selected oils, we treat the whole body along the lymphatic pathways to boost circulation and metabolism, leaving skin supple and light.</p>
+          </div>
+        </div>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="oil-sel" value="Body Oil Massage 60min" checked>
+              <span class="opt-duration"><span class="opt-name">Body Oil Massage</span></span>
+              <span class="opt-price">¥9,680<small>60min</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="oil-sel" value="Body Oil Massage 90min">
+              <span class="opt-duration"><span class="opt-name">Body Oil Massage</span></span>
+              <span class="opt-price">¥13,970<small>90min</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=en" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> Book on WhatsApp</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section" id="face">
+      <div class="container">
+        <header class="section-header">
+          <h2>Small-Face Course · Foot Callus Care</h2>
+        </header>
+        <div class="service-intro">
+          <div class="service-photo"><img src="../assets/images/relax.webp" alt="Small-face course" loading="lazy"></div>
+          <div class="service-desc">
+            <p class="service-tagline">A sculpted face and beautifully smooth soles</p>
+            <p>The Small-Face Course pairs a 30-minute facial care with mask and a 40-minute body oil massage. Foot Callus Care gently smooths hardened skin on the heels and soles.</p>
+          </div>
+        </div>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="face-sel" value="Small Face Course (Face Pack 30min + Body Oil 40min) 70min" checked>
+              <span class="opt-duration"><span class="opt-name">Small-Face Course</span><span class="opt-sub">Face care with mask 30min + Body oil massage 40min</span></span>
+              <span class="opt-price">¥8,800<small>70min</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="face-sel" value="Foot Callus Care 30min">
+              <span class="opt-duration"><span class="opt-name">Foot Callus Care</span></span>
+              <span class="opt-price">¥5,280<small>30min</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="face-sel" value="Foot Callus Care 60min">
+              <span class="opt-duration"><span class="opt-name">Foot Callus Care</span></span>
+              <span class="opt-price">¥9,680<small>60min</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=en" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> Book on WhatsApp</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="option">
+      <div class="container">
+        <header class="section-header">
+          <h2>Extension Options</h2>
+        </header>
+        <article class="service-card service-card-wide">
+          <p class="option-note">※ Extensions are added on to any course, in 10-minute units.</p>
+          <div class="option-rows">
+            <div class="opt-row opt-static"><span class="opt-duration"><span class="opt-name">Foot Reflexology</span></span><span class="opt-price">¥1,320<small>per 10min</small></span></div>
+            <div class="opt-row opt-static"><span class="opt-duration"><span class="opt-name">Body Acupressure</span></span><span class="opt-price">¥1,450<small>per 10min</small></span></div>
+            <div class="opt-row opt-static"><span class="opt-duration"><span class="opt-name">Oil Massage</span></span><span class="opt-price">¥1,650<small>per 10min</small></span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section cafebar-section" id="cafebar">
+      <div class="container">
+        <header class="section-header">
+          <h2>YOU CAFE &amp; BAR</h2>
+          <p class="section-sub">Before or after your treatment, a carefully chosen drink and snack — from Suntory whisky to sake and soft drinks.</p>
+        </header>
+        <p class="cafe-promo"><span class="cafe-promo-badge">＋¥300</span> Guests who book a single treatment can add one soft drink or one draft beer (small) for just ¥300.</p>
+        <div class="cafe-grid">
+          <div class="cafe-block">
+            <h3 class="cafe-block-title">Drinks <span>Drink</span></h3>
+            <div class="cafe-rows">
+              <div class="cafe-row"><span class="cafe-name">Soft Drinks (all)</span><span class="cafe-price">¥450</span></div>
+              <div class="cafe-row"><span class="cafe-name">Coffee</span><span class="cafe-price">¥500</span></div>
+              <div class="cafe-row"><span class="cafe-name">Draft Beer (Small)</span><span class="cafe-price">¥550</span></div>
+              <div class="cafe-row"><span class="cafe-name">Draft Beer (Large)</span><span class="cafe-price">¥770</span></div>
+              <div class="cafe-row"><span class="cafe-name">Highball</span><span class="cafe-price">¥770</span></div>
+              <div class="cafe-row"><span class="cafe-name">Whisky <span class="cafe-rec">Pick</span></span><span class="cafe-price">¥880</span></div>
+              <div class="cafe-row"><span class="cafe-name">Fruit-rich Sangria</span><span class="cafe-price">¥660</span></div>
+              <div class="cafe-row"><span class="cafe-name">Shochu <span class="cafe-desc">Kichoroku, Tomino Hozan, Ikkomon, etc.</span></span><span class="cafe-price">¥770</span></div>
+              <div class="cafe-row"><span class="cafe-name">Shochu <span class="cafe-desc">Kanehachi, Sato</span></span><span class="cafe-price">¥1,200</span></div>
+              <div class="cafe-row"><span class="cafe-name">Junmai Sake #J <span class="cafe-desc">Organic / 180ml</span> <span class="cafe-rec">Pick</span></span><span class="cafe-price">¥1,200</span></div>
+              <div class="cafe-row"><span class="cafe-name">Chinese Baijiu</span><span class="cafe-price">¥3,000</span></div>
+            </div>
+          </div>
+          <div class="cafe-block">
+            <h3 class="cafe-block-title">Suntory Whisky <span>Suntory Whiskey</span></h3>
+            <div class="cafe-rows">
+              <div class="cafe-row"><span class="cafe-name">Hakushu N</span><span class="cafe-price">¥1,200</span></div>
+              <div class="cafe-row"><span class="cafe-name">Yamazaki N <span class="cafe-rec">Pick</span></span><span class="cafe-price">¥1,500</span></div>
+              <div class="cafe-row"><span class="cafe-name">Hibiki N</span><span class="cafe-price">¥2,000</span></div>
+              <div class="cafe-row"><span class="cafe-name">Yamazaki 12 Years</span><span class="cafe-price">¥3,000</span></div>
+            </div>
+            <p class="cafe-note">※ Served on the rocks, with water, or with soda — your choice.</p>
+          </div>
+          <div class="cafe-block">
+            <h3 class="cafe-block-title">Bar Snacks <span>Bar Snacks</span></h3>
+            <div class="cafe-rows">
+              <div class="cafe-row"><span class="cafe-name">Dry-cured Ham <span class="cafe-desc">Izunuma Nosan</span></span><span class="cafe-price">¥550</span></div>
+              <div class="cafe-row"><span class="cafe-name">Dry-cured Ham (Large)</span><span class="cafe-price">¥1,000</span></div>
+              <div class="cafe-row"><span class="cafe-name">Nuts (1 kind)</span><span class="cafe-price">¥500</span></div>
+              <div class="cafe-row"><span class="cafe-name">Nuts (3 kinds)</span><span class="cafe-price">¥1,300</span></div>
+              <div class="cafe-row"><span class="cafe-name">Cup Noodles (S)</span><span class="cafe-price">¥300</span></div>
+              <div class="cafe-row"><span class="cafe-name">Cup Noodles (L)</span><span class="cafe-price">¥500</span></div>
+            </div>
+            <p class="cafe-note">※ Nuts: choose from giant corn, pistachios or dried fruit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="info">
+      <div class="container">
+        <header class="section-header">
+          <h2>Shop Information</h2>
+        </header>
+        <article class="service-card service-card-wide">
+          <ul class="includes">
+            <li><strong>Payment: cash and major credit cards accepted</strong></li>
+            <li>Hours: open 24 hours / all year round</li>
+            <li>Relaxation lounge with footbath and café &amp; bar</li>
+            <li>Single-treatment guests can add a drink for just ¥300</li>
+            <li>Great for stiff shoulders, tired lower back, swelling and facial puffiness</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="env-carousel-section" aria-label="Interior">
+      <div class="container">
+        <header class="section-header">
+          <h2>Inside YOU</h2>
+        </header>
+        <div class="env-carousel" id="envCarousel">
+          <div class="env-carousel-track" id="envTrack">
+            <div class="env-carousel-slide">
+              <img src="../assets/images/interior.webp" alt="YOU interior" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/room.webp" alt="YOU treatment room" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/oil.webp" alt="YOU oil massage" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/foot.webp" alt="YOU foot reflexology" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/relax.webp" alt="YOU relaxation" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/bar.webp" alt="YOU cafe & bar" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="env-carousel-nav">
+          <button class="env-carousel-btn" id="envPrev" aria-label="prev">&larr;</button>
+          <div class="env-dots" id="envDots"></div>
+          <button class="env-carousel-btn" id="envNext" aria-label="next">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-info">
+          <h2>Footbath Cafe &amp; Bar YOU · Kabukicho<span class="visit-romaji">愈 YOU</span></h2>
+          <div class="visit-details">
+            <div class="visit-item">
+              <h4>Address</h4>
+              <p><a href="https://maps.app.goo.gl/ToGRoEEhcjUyYEqF8" target="_blank" rel="noopener noreferrer">Skylark Bldg. 4F, Room C<br>2-38-11 Kabukicho, Shinjuku-ku<br>Tokyo 160-0021</a></p>
+            </div>
+            <a href="../booking.html?lang=en" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book on WhatsApp
+            </a>
+            <div class="visit-item">
+              <h4>Phone</h4>
+              <p><a href="tel:+81362059987">03-6205-9987</a></p>
+            </div>
+            <div class="visit-item">
+              <h4>Hours</h4>
+              <p>Open 24 hours / all year round</p>
+            </div>
+            <div class="visit-item">
+              <h4>Access</h4>
+              <p>5 min from Seibu-Shinjuku Station / 10 min from Shinjuku Station East Exit</p>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/ToGRoEEhcjUyYEqF8" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Open in Google Maps</a>
+        </div>
+        <div class="visit-map">
+          <iframe
+            title="YOU Kabukicho map"
+            src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA2-38-11&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">愈 YOU</span>
+      <p class="footer-tagline">Relaxation &amp; a drink, in the heart of Kabukicho.</p>
+      <p class="footer-copy">&copy; 2026 Footbath Cafe &amp; Bar YOU · Kabukicho. All rights reserved.</p>
+      <p class="footer-powered">Powered by <a href="https://reserveinjp.com/" target="_blank" rel="noopener">reserveinjp.</a></p>
+    </div>
+  </footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">&uarr;</button>
+  <script src="../script.js"></script>
+</body>
+</html>

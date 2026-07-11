@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="东京・新宿歌舞伎町「足浴 Cafe & Bar 愈 YOU」。足底按摩、全身指压、精油推油按摩，并设正宗咖啡＆酒吧。24小时营业・全年无休，随时放松身心的成人休闲空间。">
+  <title>足浴 Cafe &amp; Bar 愈 YOU 新宿歌舞伎町店 | 24小时营业的休闲会所</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../landing.html" class="logo">愈 YOU<span class="logo-sub">Cafe &amp; Bar</span></a>
+      <button class="nav-toggle" aria-label="menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#special">特选套餐</a></li>
+          <li><a href="#body">全身指压</a></li>
+          <li><a href="#oil">精油推油</a></li>
+          <li><a href="#foot">足底</a></li>
+          <li><a href="#cafebar">咖啡＆酒吧</a></li>
+          <li><a href="#visit">交通</a></li>
+        </ul>
+        <div class="lang-switch">
+          <a href="../cn/index.html" class="active">中文</a>
+          <a href="../en/index.html">EN</a>
+          <a href="../jp/index.html">日本語</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-slide active" style="background-image: url(../assets/images/interior.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/room.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/oil.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/bar.webp);"></div>
+      </div>
+      <div class="hero-grid-overlay"></div>
+      <div class="hero-content container">
+        <p class="hero-tag">东京・新宿歌舞伎町 | 24小时营业・全年无休</p>
+        <h1>在歌舞伎町，<br>享受一段疗愈与微醺的时光。</h1>
+        <p class="hero-sub">足底按摩、全身指压、精油推油按摩，并设正宗咖啡＆酒吧。24小时随时开放，为您留出一段完全属于自己的放松时刻。</p>
+        <div class="hero-cta">
+          <a href="#special" class="btn btn-primary">查看套餐</a>
+          <a href="../booking.html?lang=cn" class="btn btn-whatsapp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp 预约
+          </a>
+        </div>
+        <div class="hero-quick-nav">
+          <a href="#special" class="hero-nav-pill">特选套餐</a>
+          <a href="#body" class="hero-nav-pill">全身指压</a>
+          <a href="#oil" class="hero-nav-pill">精油推油</a>
+          <a href="#cafebar" class="hero-nav-pill">咖啡＆酒吧</a>
+        </div>
+      </div>
+      <div class="hero-dots" id="heroDots">
+        <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="hero-dot" data-index="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="container intro-grid">
+        <div class="intro-text">
+          <h2>在歌舞伎町的中心，<br>让身心彻底松弛</h2>
+          <p>「愈 YOU」将足浴、足底、全身指压与精油推油等丰富的放松项目，与正宗的咖啡＆酒吧融为一体，是一处属于成年人的隐秘据点。做完理疗后，不妨慢慢品一杯三得利威士忌、清酒，或几样精选小吃。24小时营业・全年无休，无论深夜还是清晨，都能按您自己的节奏度过。</p>
+        </div>
+        <div class="intro-features">
+          <div class="intro-promo-image">
+            <img src="../assets/images/relax.webp" alt="愈 YOU 新宿歌舞伎町店" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="special">
+      <div class="container">
+        <header class="section-header">
+          <h2>特选混搭套餐</h2>
+          <p class="section-sub">足底与全身组合，最受欢迎的放松方式。</p>
+        </header>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 1: Foot30 + Body30 (60min)">
+              <span class="opt-duration"><span class="opt-name">① 足底30分＋全身30分</span></span>
+              <span class="opt-price">¥7,580<small>共60分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 2: Foot30 + Body30 + Head10 (70min)" checked>
+              <span class="opt-duration"><span class="opt-name">② 足底30分＋全身30分＋头部10分<span class="opt-badge">人气No.2</span></span></span>
+              <span class="opt-price">¥7,980<small>共70分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 3: Foot30 + Body60 (90min)">
+              <span class="opt-duration"><span class="opt-name">③ 足底30分＋全身60分</span></span>
+              <span class="opt-price">¥12,100<small>共90分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 4: Foot60 + Body Acupressure60 (120min)">
+              <span class="opt-duration"><span class="opt-name">④ 足底60分＋全身指压60分</span></span>
+              <span class="opt-price">¥15,000<small>共120分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 5: Foot60 + Body Oil60 (120min)">
+              <span class="opt-duration"><span class="opt-name">⑤ 足底60分＋全身精油60分</span></span>
+              <span class="opt-price">¥16,500<small>共120分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 6: Foot60 + Body Oil90 (150min)">
+              <span class="opt-duration"><span class="opt-name">⑥ 足底60分＋全身精油90分</span></span>
+              <span class="opt-price">¥19,800<small>共150分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="special-sel" value="Special 7 Grand: Foot60 + Body Oil120 (180min)">
+              <span class="opt-duration"><span class="opt-name">⑦ 大满足套餐｜足底60分＋全身精油120分</span></span>
+              <span class="opt-price">¥22,800<small>共180分</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=cn" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> WhatsApp 预约</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="foot">
+      <div class="container">
+        <header class="section-header">
+          <h2>足底按摩</h2>
+        </header>
+        <div class="service-intro">
+          <div class="service-photo"><img src="../assets/images/foot.webp" alt="足底按摩" loading="lazy"></div>
+          <div class="service-desc">
+            <p class="service-tagline">从脚底反射区，调理全身循环</p>
+            <p>先以足浴温暖双足，再由理疗师细致刺激足底反射区。特别适合久站、走路劳累或容易浮肿的您。</p>
+          </div>
+        </div>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="foot-sel" value="Foot Massage 60min" checked>
+              <span class="opt-duration"><span class="opt-name">足底按摩</span></span>
+              <span class="opt-price">¥7,950<small>60分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="foot-sel" value="Foot Massage 90min">
+              <span class="opt-duration"><span class="opt-name">足底按摩</span></span>
+              <span class="opt-price">¥11,000<small>90分</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=cn" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> WhatsApp 预约</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section" id="body">
+      <div class="container">
+        <header class="section-header">
+          <h2>全身指压按摩</h2>
+        </header>
+        <div class="service-intro">
+          <div class="service-photo"><img src="../assets/images/room.webp" alt="全身指压按摩" loading="lazy"></div>
+          <div class="service-desc">
+            <p class="service-tagline">以指压深入，逐一化解僵硬</p>
+            <p>针对肩、颈、背、腰等重点部位，以全身指压手法细致护理，缓解久坐办公与长时间劳累累积的紧绷。</p>
+          </div>
+        </div>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="body-sel" value="Body Acupressure 30min">
+              <span class="opt-duration"><span class="opt-name">全身指压按摩</span></span>
+              <span class="opt-price">¥4,400<small>30分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="body-sel" value="Body Acupressure 60min" checked>
+              <span class="opt-duration"><span class="opt-name">全身指压按摩</span></span>
+              <span class="opt-price">¥8,250<small>60分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="body-sel" value="Body Acupressure 90min">
+              <span class="opt-duration"><span class="opt-name">全身指压按摩</span></span>
+              <span class="opt-price">¥12,100<small>90分</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=cn" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> WhatsApp 预约</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="oil">
+      <div class="container">
+        <header class="section-header">
+          <h2>全身精油推油按摩</h2>
+        </header>
+        <div class="service-intro">
+          <div class="service-photo"><img src="../assets/images/oil.webp" alt="全身精油推油按摩" loading="lazy"></div>
+          <div class="service-desc">
+            <p class="service-tagline">以芳香精油，顺滑护理全身</p>
+            <p>选用严选精油，沿淋巴走向为全身推油护理，促进代谢与血液循环，令肌肤水润轻盈。</p>
+          </div>
+        </div>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="oil-sel" value="Body Oil Massage 60min" checked>
+              <span class="opt-duration"><span class="opt-name">全身精油推油按摩</span></span>
+              <span class="opt-price">¥9,680<small>60分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="oil-sel" value="Body Oil Massage 90min">
+              <span class="opt-duration"><span class="opt-name">全身精油推油按摩</span></span>
+              <span class="opt-price">¥13,970<small>90分</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=cn" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> WhatsApp 预约</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section" id="face">
+      <div class="container">
+        <header class="section-header">
+          <h2>小脸套餐・足底去角质</h2>
+        </header>
+        <div class="service-intro">
+          <div class="service-photo"><img src="../assets/images/relax.webp" alt="小脸套餐" loading="lazy"></div>
+          <div class="service-desc">
+            <p class="service-tagline">紧致小脸，双足光滑</p>
+            <p>小脸套餐包含含面膜的小脸护理30分，加全身精油推油按摩40分。足底去角质则细致护理足跟与足底的硬皮角质。</p>
+          </div>
+        </div>
+        <article class="service-card service-card-wide">
+          <div class="option-rows">
+            <label class="opt-row">
+              <input type="radio" name="face-sel" value="Small Face Course (Face Pack 30min + Body Oil 40min) 70min" checked>
+              <span class="opt-duration"><span class="opt-name">小脸套餐</span><span class="opt-sub">小脸护理（含面膜）30分＋全身精油推油40分</span></span>
+              <span class="opt-price">¥8,800<small>70分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="face-sel" value="Foot Callus Care 30min">
+              <span class="opt-duration"><span class="opt-name">足底去角质</span></span>
+              <span class="opt-price">¥5,280<small>30分</small></span>
+            </label>
+            <label class="opt-row">
+              <input type="radio" name="face-sel" value="Foot Callus Care 60min">
+              <span class="opt-duration"><span class="opt-name">足底去角质</span></span>
+              <span class="opt-price">¥9,680<small>60分</small></span>
+            </label>
+          </div>
+          <a href="../booking.html?lang=cn" class="btn-booking"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg> WhatsApp 预约</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="option">
+      <div class="container">
+        <header class="section-header">
+          <h2>延长选项</h2>
+        </header>
+        <article class="service-card service-card-wide">
+          <p class="option-note">※ 延长可与各套餐组合使用，以10分钟为单位。</p>
+          <div class="option-rows">
+            <div class="opt-row opt-static"><span class="opt-duration"><span class="opt-name">足底按摩</span></span><span class="opt-price">¥1,320<small>每10分</small></span></div>
+            <div class="opt-row opt-static"><span class="opt-duration"><span class="opt-name">全身指压</span></span><span class="opt-price">¥1,450<small>每10分</small></span></div>
+            <div class="opt-row opt-static"><span class="opt-duration"><span class="opt-name">精油推油</span></span><span class="opt-price">¥1,650<small>每10分</small></span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section cafebar-section" id="cafebar">
+      <div class="container">
+        <header class="section-header">
+          <h2>YOU CAFE &amp; BAR</h2>
+          <p class="section-sub">理疗前后，来一杯精选饮品与小吃——从三得利威士忌到清酒、软饮，应有尽有。</p>
+        </header>
+        <p class="cafe-promo"><span class="cafe-promo-badge">＋¥300</span> 单点理疗项目的顾客，仅需优惠价¥300即可加一杯软饮或一杯生啤（小）。</p>
+        <div class="cafe-grid">
+          <div class="cafe-block">
+            <h3 class="cafe-block-title">饮品 <span>Drink</span></h3>
+            <div class="cafe-rows">
+              <div class="cafe-row"><span class="cafe-name">软饮（全部）</span><span class="cafe-price">¥450</span></div>
+              <div class="cafe-row"><span class="cafe-name">咖啡</span><span class="cafe-price">¥500</span></div>
+              <div class="cafe-row"><span class="cafe-name">生啤（小）</span><span class="cafe-price">¥550</span></div>
+              <div class="cafe-row"><span class="cafe-name">生啤（大）</span><span class="cafe-price">¥770</span></div>
+              <div class="cafe-row"><span class="cafe-name">高球（Highball）</span><span class="cafe-price">¥770</span></div>
+              <div class="cafe-row"><span class="cafe-name">威士忌 <span class="cafe-rec">推荐</span></span><span class="cafe-price">¥880</span></div>
+              <div class="cafe-row"><span class="cafe-name">满满水果桑格利亚</span><span class="cafe-price">¥660</span></div>
+              <div class="cafe-row"><span class="cafe-name">烧酒 <span class="cafe-desc">吉四六・富乃宝山・一刻者 等</span></span><span class="cafe-price">¥770</span></div>
+              <div class="cafe-row"><span class="cafe-name">烧酒 <span class="cafe-desc">兼八・佐藤</span></span><span class="cafe-price">¥1,200</span></div>
+              <div class="cafe-row"><span class="cafe-name">纯米清酒 #J <span class="cafe-desc">有机／一合180ml</span> <span class="cafe-rec">推荐</span></span><span class="cafe-price">¥1,200</span></div>
+              <div class="cafe-row"><span class="cafe-name">中国白酒</span><span class="cafe-price">¥3,000</span></div>
+            </div>
+          </div>
+          <div class="cafe-block">
+            <h3 class="cafe-block-title">三得利威士忌 <span>Suntory Whiskey</span></h3>
+            <div class="cafe-rows">
+              <div class="cafe-row"><span class="cafe-name">白州 N <span class="cafe-desc">Hakushu</span></span><span class="cafe-price">¥1,200</span></div>
+              <div class="cafe-row"><span class="cafe-name">山崎 N <span class="cafe-desc">Yamazaki</span> <span class="cafe-rec">推荐</span></span><span class="cafe-price">¥1,500</span></div>
+              <div class="cafe-row"><span class="cafe-name">响 N <span class="cafe-desc">Hibiki</span></span><span class="cafe-price">¥2,000</span></div>
+              <div class="cafe-row"><span class="cafe-name">山崎 12年 <span class="cafe-desc">Yamazaki 12 years</span></span><span class="cafe-price">¥3,000</span></div>
+            </div>
+            <p class="cafe-note">※ 可选择净饮加冰、兑水或兑碳酸。</p>
+          </div>
+          <div class="cafe-block">
+            <h3 class="cafe-block-title">小吃 <span>Bar Snacks</span></h3>
+            <div class="cafe-rows">
+              <div class="cafe-row"><span class="cafe-name">生火腿 <span class="cafe-desc">伊豆沼农产</span></span><span class="cafe-price">¥550</span></div>
+              <div class="cafe-row"><span class="cafe-name">生火腿（大份）</span><span class="cafe-price">¥1,000</span></div>
+              <div class="cafe-row"><span class="cafe-name">坚果 1种</span><span class="cafe-price">¥500</span></div>
+              <div class="cafe-row"><span class="cafe-name">坚果 3种</span><span class="cafe-price">¥1,300</span></div>
+              <div class="cafe-row"><span class="cafe-name">杯面（小）</span><span class="cafe-price">¥300</span></div>
+              <div class="cafe-row"><span class="cafe-name">杯面（大）</span><span class="cafe-price">¥500</span></div>
+            </div>
+            <p class="cafe-note">※ 坚果可从玉米、开心果、水果干中选择。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="info">
+      <div class="container">
+        <header class="section-header">
+          <h2>店铺信息</h2>
+        </header>
+        <article class="service-card service-card-wide">
+          <ul class="includes">
+            <li><strong>支付方式：现金・各类信用卡</strong></li>
+            <li>营业时间：24小时营业／全年无休</li>
+            <li>设有足浴与咖啡＆酒吧的休闲空间</li>
+            <li>单点理疗的顾客，加¥300即可享一杯饮品</li>
+            <li>适合肩颈僵硬、腰部劳累、浮肿及面部浮肿的您</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="env-carousel-section" aria-label="店内空间">
+      <div class="container">
+        <header class="section-header">
+          <h2>店内空间</h2>
+        </header>
+        <div class="env-carousel" id="envCarousel">
+          <div class="env-carousel-track" id="envTrack">
+            <div class="env-carousel-slide">
+              <img src="../assets/images/interior.webp" alt="愈 YOU 店内" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/room.webp" alt="愈 YOU 理疗室" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/oil.webp" alt="愈 YOU 精油推油" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/foot.webp" alt="愈 YOU 足底按摩" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/relax.webp" alt="愈 YOU 放松空间" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/bar.webp" alt="愈 YOU 咖啡＆酒吧" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="env-carousel-nav">
+          <button class="env-carousel-btn" id="envPrev" aria-label="prev">&larr;</button>
+          <div class="env-dots" id="envDots"></div>
+          <button class="env-carousel-btn" id="envNext" aria-label="next">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-info">
+          <h2>足浴 Cafe &amp; Bar 愈 YOU 新宿歌舞伎町店<span class="visit-romaji">愈 YOU KABUKICHO</span></h2>
+          <div class="visit-details">
+            <div class="visit-item">
+              <h4>地址</h4>
+              <p><a href="https://maps.app.goo.gl/ToGRoEEhcjUyYEqF8" target="_blank" rel="noopener noreferrer">〒160-0021<br>东京都新宿区歌舞伎町2-38-11<br>Skylark大厦 4F-C室</a></p>
+            </div>
+            <a href="../booking.html?lang=cn" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp 预约
+            </a>
+            <div class="visit-item">
+              <h4>电话</h4>
+              <p><a href="tel:+81362059987">03-6205-9987</a></p>
+            </div>
+            <div class="visit-item">
+              <h4>营业时间</h4>
+              <p>24小时营业／全年无休</p>
+            </div>
+            <div class="visit-item">
+              <h4>交通</h4>
+              <p>西武新宿站步行5分钟／新宿站东口步行10分钟</p>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/ToGRoEEhcjUyYEqF8" target="_blank" rel="noopener noreferrer" class="btn btn-outline">在 Google 地图打开</a>
+        </div>
+        <div class="visit-map">
+          <iframe
+            title="愈 YOU 新宿歌舞伎町店 map"
+            src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E6%AD%8C%E8%88%9E%E4%BC%8E%E7%94%BA2-38-11&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">愈 YOU</span>
+      <p class="footer-tagline">在歌舞伎町，享受一段疗愈与微醺的时光。</p>
+      <p class="footer-copy">&copy; 2026 足浴 Cafe &amp; Bar 愈 YOU 新宿歌舞伎町店. 版权所有.</p>
+      <p class="footer-powered">Powered by <a href="https://reserveinjp.com/" target="_blank" rel="noopener">reserveinjp.</a></p>
+    </div>
+  </footer>
+
+<button class="back-to-top" id="backToTop" aria-label="返回顶部" title="返回顶部">&uarr;</button>
+  <script src="../script.js"></script>
+</body>
+</html>

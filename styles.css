@@ -379,7 +379,7 @@ html[lang="zh-CN"] .hero-nav-pill {
 .section-sub,
 .hero h1,
 .section-header h2 {
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .hero-sub {
@@ -1868,7 +1868,7 @@ html[lang="zh-CN"] .hero-nav-pill {
 }
 
 /* --- mobile typography polish (patch): avoid orphaned single characters / words --- */
-.hero-content h1, .intro-text h2, .section-header h2, .visit-info h2 { text-wrap: balance; }
+.hero-content h1, .intro-text h2, .section-header h2, .visit-info h2 { text-wrap: pretty; }
 .hero-sub, .intro-text p, .section-sub, .footer-tagline, .includes li, .visit-item p { text-wrap: pretty; }
 .hero-content h1 { overflow-wrap: anywhere; }
 
@@ -1969,3 +1969,8 @@ html[lang="zh-CN"] .hero-nav-pill {
 .cafe-price{color:var(--gold-light);font-weight:600;white-space:nowrap;font-size:.98rem;}
 .cafe-note{font-size:.75rem;color:#9c907c;margin-top:.9rem;line-height:1.65;}
 @media(max-width:768px){.cafe-grid{gap:var(--space-md);}}
+
+/* mobile: neutralize desktop <br> in headings so CJK flows full width (avoids single-char / punctuation orphans) */
+@media (max-width: 600px) {
+  .hero-content h1 br, .intro-text h2 br, .section-header h2 br, .visit-info h2 br { display: none; }
+}

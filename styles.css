@@ -862,6 +862,7 @@ html[lang="zh-CN"] .hero-nav-pill {
 .opt-row {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.6rem;
   padding: 0.9rem 0.75rem;
@@ -890,6 +891,8 @@ html[lang="zh-CN"] .hero-nav-pill {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .opt-badge {
@@ -2004,3 +2007,12 @@ html[lang="zh-CN"] .hero-nav-pill {
 @media (max-width: 640px) {
   .service-card-wide { padding: 1.1rem 0.75rem; }
 }
+.opt-row .opt-name,.opt-row .opt-sub{text-wrap:balance}
+
+/* Long option titles take the full row; price/time drop to a line below.
+   On very narrow screens fall back to balanced wrapping to avoid overflow. */
+.opt-row .opt-duration{min-width:max-content;}
+@media (max-width:380px){ .opt-row .opt-duration{min-width:0;} }
+
+/* Hero title: balance the two lines so no ≤3-char orphan remains on mobile */
+.hero-content h1{ text-wrap:balance; }

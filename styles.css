@@ -860,10 +860,11 @@ html[lang="zh-CN"] .hero-nav-pill {
 }
 
 .opt-row {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-  padding: 0.9rem 1.1rem;
+  gap: 0.6rem;
+  padding: 0.9rem 0.75rem;
   border: 1px solid rgba(184, 149, 107, 0.3);
   border-radius: 8px;
   background: var(--cream);
@@ -901,6 +902,14 @@ html[lang="zh-CN"] .hero-nav-pill {
   border-radius: 2px;
 }
 
+.opt-row .opt-badge:not(.ogh-badge) {
+  position: absolute;
+  top: -9px;
+  right: 10px;
+  margin: 0;
+  z-index: 2;
+}
+
 .opt-row .opt-price {
   margin-left: auto;
   text-align: right;
@@ -912,8 +921,8 @@ html[lang="zh-CN"] .hero-nav-pill {
 
 .opt-row .opt-price small {
   display: block;
-  font-size: 0.72rem;
-  font-weight: 300;
+  font-size: 0.85rem;
+  font-weight: 700;
   color: var(--charcoal-light);
 }
 
@@ -1990,3 +1999,8 @@ html[lang="zh-CN"] .hero-nav-pill {
 .hero-nav-pill:hover{ background: rgba(184,137,74,0.12); border-color: var(--gold); color: var(--gold); }
 .hero-scroll span{ color: var(--charcoal-light); }
 .scroll-line{ background: linear-gradient(to bottom, rgba(184,137,74,0.7), transparent); }
+
+/* Compact option cards on mobile */
+@media (max-width: 640px) {
+  .service-card-wide { padding: 1.1rem 0.75rem; }
+}

@@ -92,6 +92,7 @@
     .addon-item .addon-name{flex:1;}
     .addon-item .addon-price{color:var(--gold,#9e2b25);font-weight:500;white-space:nowrap;}
     .addon-item:has(input:checked){border-color:var(--gold,#9e2b25);background:rgba(184,149,107,.08);}
+    .addon-item .addon-qty{border:1px solid rgba(184,149,107,.5);border-radius:6px;padding:3px 7px;font-size:.82rem;background:#fff;color:#3a2f24;flex-shrink:0;cursor:pointer;}
   </style>
 </head>
 <body>
@@ -199,8 +200,13 @@
     var ADDON_LABEL = { jp:"延長オプション（任意・10分単位）", en:"Extension options (optional · per 10 min)", cn:"延长选项（可选・每10分钟）" };
     var ADDON_WA = { jp:"延長オプション", en:"Extension options", cn:"延长选项" };
     function buildAddonsHTML(){
-      var ck={}; document.querySelectorAll('#addonsList input[name="addon"]:checked').forEach(function(cb){ck[cb.value]=1;});
-      return ADDONS.map(function(a){ return '<label class="addon-item"><input type="checkbox" name="addon" value="'+a.value+'"'+(ck[a.value]?' checked':'')+'><span class="addon-name">'+a[currentLang]+'</span><span class="addon-price">+¥'+a.price.toLocaleString()+'</span></label>'; }).join('');
+      var guests=parseInt((document.getElementById('guests')||{}).value)||1;
+      var prev={}; document.querySelectorAll('#addonsList .addon-item').forEach(function(li){ var cb=li.querySelector('input[name="addon"]'), q=li.querySelector('.addon-qty'); if(cb){ prev[cb.value]={checked:cb.checked, qty:(q?parseInt(q.value)||1:1)}; } });
+      return ADDONS.map(function(a){
+        var st=prev[a.value]||{checked:false,qty:1}; var qty=Math.min(st.qty||1,guests)||1; var qsel='';
+        if(guests>1){ var o=''; for(var i=1;i<=guests;i++){ o+='<option value="'+i+'"'+(i===qty?' selected':'')+'>×'+i+'</option>'; } qsel='<select class="addon-qty" onclick="event.stopPropagation()"'+(st.checked?'':' style="display:none"')+'>'+o+'</select>'; }
+        return '<label class="addon-item"><input type="checkbox" name="addon" value="'+a.value+'"'+(st.checked?' checked':'')+'><span class="addon-name">'+a[currentLang]+'</span>'+qsel+'<span class="addon-price">+¥'+a.price.toLocaleString()+'</span></label>';
+      }).join('');
     }
     var OPEN_HOURS = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
     var LATE = null;
@@ -315,6 +321,8 @@
     function servicePrice(service, ts){ var p = serviceInfo[service] || 0; if(p && isLateTime(ts)) p += LATE.add; return p; }
     document.getElementById('guests').addEventListener('change', updateAdditionalServices);
     document.getElementById('samePackage').addEventListener('change', updateAdditionalServices);
+    document.getElementById('guests').addEventListener('change', function(){ var _a=document.getElementById('addonsList'); if(_a){ _a.innerHTML=buildAddonsHTML(); } });
+    document.getElementById('addonsList').addEventListener('change', function(e){ if(e.target&&e.target.name==='addon'){ var li=e.target.closest('.addon-item'); var q=li&&li.querySelector('.addon-qty'); if(q){ q.style.display=e.target.checked?'':'none'; } } });
     function updateAdditionalServices(){
       var guests=document.getElementById('guests').value, add=document.getElementById('additionalServices'), cont=document.getElementById('additionalServicesContainer'), spg=document.getElementById('samePackageGroup'), spc=document.getElementById('samePackage'), ss=document.getElementById('service');
       if(!guests||guests==='1'){ add.classList.remove('show'); cont.innerHTML=''; spg.style.display='none'; updateMessagePreview(); return; }
@@ -341,8 +349,8 @@
       if(same&&gc>1){ m+=t('waSameCourse')+'\n'; }
       else { for(var i=1;i<gc;i++){ var gs=fd.get('guest'+i+'Service'); if(gs&&gs.trim()){ var gl=currentLang==='en'?(t('waGuest')+' '+(i+1)):(t('waGuest')+(i+1)); m+=gl+': '+gs+' (¥'+servicePrice(gs, time).toLocaleString()+')\n'; } } }
       var addons=[], addonTotal=0;
-      document.querySelectorAll('#addonsList input[name="addon"]:checked').forEach(function(cb){ for(var k=0;k<ADDONS.length;k++){ if(ADDONS[k].value===cb.value){ addons.push(ADDONS[k]); addonTotal+=ADDONS[k].price; break; } } });
-      if(addons.length){ m+=ADDON_WA[currentLang]+':\n'; addons.forEach(function(a){ m+='  ・'+a[currentLang]+' (¥'+a.price.toLocaleString()+')\n'; }); }
+      document.querySelectorAll('#addonsList input[name="addon"]:checked').forEach(function(cb){ var li=cb.closest('.addon-item'); var qs=li&&li.querySelector('.addon-qty'); var qty=qs?(parseInt(qs.value)||1):1; for(var k=0;k<ADDONS.length;k++){ if(ADDONS[k].value===cb.value){ addons.push({a:ADDONS[k],qty:qty}); addonTotal+=ADDONS[k].price*qty; break; } } });
+      if(addons.length){ m+=ADDON_WA[currentLang]+':\n'; addons.forEach(function(x){ var suf=x.qty>1?(' ×'+x.qty):''; m+='  ・'+x.a[currentLang]+suf+' (¥'+(x.a.price*x.qty).toLocaleString()+')\n'; }); }
       var total=mainPrice;
       if(same){ total=mainPrice*gc; } else { for(var j=1;j<gc;j++){ var g2=fd.get('guest'+j+'Service'); if(g2&&g2.trim()) total+=servicePrice(g2, time); } }
       total += addonTotal;

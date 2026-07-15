@@ -1974,3 +1974,19 @@ html[lang="zh-CN"] .hero-nav-pill {
 @media (max-width: 600px) {
   .hero-content h1 br, .intro-text h2 br, .section-header h2 br, .visit-info h2 br { display: none; }
 }
+
+/* ===== 愈 YOU hero → solid warm-cream (no photo), clean landing style ===== */
+.hero{
+  background:
+    radial-gradient(ellipse at 68% 16%, rgba(216,181,126,0.20) 0%, transparent 56%),
+    radial-gradient(ellipse at 12% 86%, rgba(184,137,74,0.08) 0%, transparent 55%),
+    linear-gradient(180deg, #fbf8f3 0%, #efe8de 100%);
+}
+.hero-carousel, .hero-grid-overlay{ display:none; }
+.hero-content h1{ color: var(--charcoal); }
+.hero-tag{ color: var(--gold); }
+.hero-sub{ color: var(--charcoal-light); }
+.hero-nav-pill{ color: var(--charcoal); border-color: rgba(36,28,22,0.22); }
+.hero-nav-pill:hover{ background: rgba(184,137,74,0.12); border-color: var(--gold); color: var(--gold); }
+.hero-scroll span{ color: var(--charcoal-light); }
+.scroll-line{ background: linear-gradient(to bottom, rgba(184,137,74,0.7), transparent); }
